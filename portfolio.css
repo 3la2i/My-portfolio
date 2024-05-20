@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins;", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,12 +23,13 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  background-color: #081b29;;
 }
 
 /* the logo */
 .logo {
   font-size: 25px;
-  color: #ededed;
+  color:#00abf0;
   text-decoration: none;
   font-weight: 600;
 }
@@ -110,6 +112,8 @@ body {
   transition: 0.5s;
 }
 
+
+/* making buttons have an animate */
 .btn-box a:hover {
   color: #00abf0;
 }
@@ -182,11 +186,68 @@ body {
   padding-bottom: 20px;
   border-radius: 10px;
   border: 4px #00abf0 solid;
+  
 }
 
-.work-content {
+.container {
   background: #0c163b;
   text-align: center;
-
+display: flex;
   padding: 200px 10%;
+  justify-content: space-between;
+  
 }
+
+
+
+
+@media (max-width: 600px)
+{
+  .home {
+    justify-content: center;
+  }
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .home-content h1 {
+    font-size: 32px;
+    line-height: 50px;
+
+  }
+.home-content h3{
+  font-size: 22px;
+
+}
+.home-content p{
+  font-size: 10px;
+  line-height: 20px;
+}
+
+.container {
+  flex-direction: column;
+  gap: 30px;
+}
+
+.home-sci{
+ flex-direction:row;
+ 
+
+ 
+}
+
+.btn-box{
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-box a {
+  padding: 15px;
+}
+}
+  
+
+
+
+
+
