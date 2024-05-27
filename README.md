@@ -23,8 +23,9 @@ I concluded the home page by showcasing my projects and explaining my skills in 
 This structured approach ensured a clear, engaging, and professional portfolio presentation.
 
 
+this is my url
+https://3la2i.github.io/My-portfolio/
 
-<!-- sure i used chatgpt to imrpve the text above -->
 
 
 
