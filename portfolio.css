@@ -10,26 +10,34 @@
 
 body {
   /* background: #081b29;  */
-  color: #ededed;
+
+  /* thi h1 cloring */
+  color: #ffffff;   
 }
 .header {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 2;
+
+  /* padding for top and edges */
   padding: 20px 10%;
   /* background: red; */
+
+
+  /* flx them and making them centeing with align */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
+  /* z-index: 100; */
   background-color: #081b29;;
 }
 
 /* the logo */
 .logo {
   font-size: 25px;
-  color:#00abf0;
+  color:#00abf0; 
   text-decoration: none;
   font-weight: 600;
 }
@@ -40,6 +48,9 @@ body {
   color: #ededed;
   text-decoration: none;
   font-weight: 500;
+
+  
+  /* making margin between abt srv cont */
   margin-left: 35px;
 
   transition: 0.3s;
@@ -150,30 +161,9 @@ body {
   width: 100%;
 }
 
-/* social media icons and styling them */
+/* social media icons and styling them i transfered them to footer */
 
-.home-sci {
-  position: absolute;
-  bottom: 40px;
-  width: 170px;
-  /* background: red; */
-  display: flex;
-  justify-content: space-between;
-}
-.home-sci a {
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: 2px solid #00abf0;
-  border-radius: 50%;
-  font-size: 20px;
-  color: #00abf0;
-  text-decoration: none;
-}
+
 
 /* now my work */
 
@@ -201,6 +191,10 @@ display: flex;
 
 
 
+
+
+
+
 @media (max-width: 600px)
 {
   .home {
@@ -220,7 +214,7 @@ display: flex;
 
 }
 .home-content p{
-  font-size: 10px;
+  font-size: 12px;
   line-height: 20px;
 }
 
@@ -229,12 +223,7 @@ display: flex;
   gap: 30px;
 }
 
-.home-sci{
- flex-direction:row;
- 
 
- 
-}
 
 .btn-box{
   flex-direction: column;
@@ -244,9 +233,83 @@ display: flex;
 .btn-box a {
   padding: 15px;
 }
+
+
+
+/* footr responsive */
+
+
 }
   
 
+
+
+
+/* footer */
+
+
+.footer {
+  background-color: #081b29;
+  padding: 40px 10%;
+  color: #ededed;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo .logo {
+  font-size: 25px;
+  color: #00abf0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* thid here if i want to add some links  */
+
+/* .footer-links a {
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+} */
+
+/* .footer-links a:hover {
+  color: #00abf0;
+} */
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social .social-icon {
+  font-size: 20px;
+  color: #00abf0;
+  text-decoration: none;
+  border: 2px solid #00abf0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.footer-social .social-icon:hover {
+  background-color: #00abf0;
+  color: #081b29;
+}
 
 
 
